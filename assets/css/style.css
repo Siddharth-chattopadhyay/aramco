@@ -1237,9 +1237,6 @@ header .row .div-2 ul li a{
     margin-bottom: 80px;
 }
 
-/* Video Section */
-
-/* Video Section End */
 
 .freq-asked-questions{
     padding: 731px 15px 165px 15px;
@@ -1339,7 +1336,6 @@ header .row .div-2 ul li a{
 .our-case-studies{
     background-color: var(--our-services-bg-color);
     padding: 160px 15px 400px 15px;
-    display: none; /* Temporary */
 }
 
 .our-case-studies > .title{
@@ -1359,6 +1355,10 @@ header .row .div-2 ul li a{
     text-transform: uppercase;
 }
 
+.our-case-studies > .pictures{
+    align-content: center;
+}
+
 .our-case-studies > .title > h1{
     font-size: 54px;
     line-height: 1.15;
@@ -1371,6 +1371,10 @@ header .row .div-2 ul li a{
 
 .our-case-studies > .title > h1 > span{
     color: var(--mark-color);
+}
+
+.our-case-studies > .pictures > div{
+    margin: 20px 0;
 }
 
 .our-case-studies > .pictures > div > img{

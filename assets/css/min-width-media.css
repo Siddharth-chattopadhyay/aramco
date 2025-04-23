@@ -73,6 +73,9 @@
     .freq-asked-questions > .s1 > .button > p{
         font-size: 10px;
     }
+    .our-case-studies > .title > h1{
+        font-size: 35px;
+    }
 }
 
 @media (min-width: 576px){
@@ -123,9 +126,6 @@
     .header-2 > nav{
         display: none;
     }
-    .banner > .container{
-        /* width: 500px; */
-    }
 
     .banner-2 > .b-1 > div > .sb-1{
         max-width: 100%;
@@ -133,9 +133,9 @@
     .banner-3{
         padding: 100px 0px 100px 0px;
     }
-    /* .icon {
-        width: 50%;
-    } */
+    .our-case-studies > .title > h1{
+        font-size: 35px;
+    }
 }
 
 @media (min-width: 768px){

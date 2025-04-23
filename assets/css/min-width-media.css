@@ -46,9 +46,7 @@
     .header-2 > nav{
         display: none;
     }
-    .banner > .container{
-        width: 500px;
-    }
+
     .banner-2 > .b-1 > div > .sb-1{
         max-width: 100%;
     }
@@ -56,9 +54,9 @@
         padding: 100px 0px 100px 0px;
     }
 
-    /* .icon {
-        width: 50%;
-    } */
+    .banner .container h1{
+        font-size: 50px;
+    }
 }
 
 @media (min-width: 576px){
@@ -110,7 +108,7 @@
         display: none;
     }
     .banner > .container{
-        width: 500px;
+        /* width: 500px; */
     }
 
     .banner-2 > .b-1 > div > .sb-1{

@@ -345,7 +345,6 @@ header .row .div-2 ul li a{
 
 .banner{
     width: 98%;
-    height: 800px;
     margin: 2px auto;
     position: relative;
 }
@@ -362,7 +361,7 @@ header .row .div-2 ul li a{
 }
 
 .banner .container{
-    width: 800px;
+    width: 60%;
     color: white;
     margin-left: 20px;
     padding-top: 10%;
@@ -390,50 +389,50 @@ header .row .div-2 ul li a{
 }
 
 .banner > .btn-container{
-    display: flex;
     column-gap: 30px;
     padding-left: 40px;
     align-items: center;
+    padding-bottom: 100px;
 }
 
 .banner .btn-container > .btn{
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-evenly;
+    display: block;
     transition: all 0.5s ease;
-    width: 170px;
-    height: 50px;
+    padding: 15px 40px;
     background-color: white;
     text-decoration: none;
     border: 2px solid white;
-    padding: 15px;
     border-radius: 50px;
+    margin-bottom: 40px;
 }
 
 .banner .btn-container > .btn:hover{
     background-color: transparent;
 }
 
-.banner .btn-container > .btn > p{
+.banner .btn-container > .btn p{
     color: var(--primary-color);
+    text-transform: uppercase;
+    font-family: "Public Sans";
+    font-size: 12px;
 }
 
-.banner > .btn-container >  .btn:hover > p{
+.banner > .btn-container >  .btn:hover  p{
     color: white;
 }
 
-.banner > .btn-container >  .btn:hover > .svg > svg{
+.banner > .btn-container >  .btn:hover  .svg > svg{
     fill: white;
 }
 
-.banner .btn-container .ytplay{
+.banner > .btn-container .ytplay{
     text-decoration: none;
     display: flex;
     column-gap: 10px;
     align-items: center;
 }
 
-.banner .btn-container .ytplay > span{
+.banner > .btn-container .ytplay > span{
     width: 60px;
     height: 60px;
     background-color: var(--btn-color);
@@ -442,13 +441,13 @@ header .row .div-2 ul li a{
     border-radius: 50px;
 }
 
-.banner .btn-container .ytplay > p{
+.banner > .btn-container .ytplay > p{
     font-size: 26px;
     font-weight: lighter;
     color: white;
 }
 
-.banner .btn-container .ytplay > span > i{
+.banner > .btn-container .ytplay > span > i{
     position: absolute;
     top: 50%;
     left: 50%;

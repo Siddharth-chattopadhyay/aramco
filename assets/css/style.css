@@ -21,15 +21,23 @@
     --our-services-bg-color: #eff6f4;
     --our-service-box-bg-color: #daeee5;
     --our-service-box-bg-color-2: #8eb2a2;
+    --gw: 15px;
 }
 
-/* .container{
+.container{
     max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: var(--gw);
+    padding-right: var(--gw);
 }
-*/
 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--gw));
+    margin-right: calc(-1 * var(--gw));
+}
 .col-1{
     width: 8.3333%;
 }
@@ -67,10 +75,19 @@
     width: 100%;
 }
 
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,
+.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+    padding-left: var(--gw);
+    padding-right: var(--gw);
+}
+
 header .row, header .childrow{
     display: flex;
 }
-
+img{
+    max-width: 100%;
+    display: block;
+}
 .flex{
     display: flex;
 }
@@ -117,6 +134,10 @@ header .row, header .childrow{
 
 .justify-content-flex-start{
     justify-content: flex-start;
+}
+
+.row-gap-30{
+    row-gap: 30px;
 }
 
 header .row{
@@ -974,43 +995,50 @@ header .row .div-2 ul li a{
     background-color: var(--secondary-color);
 }
 
-.our-services > .cards > div > div{
-    width: calc(100% / 2);
+/* Card Content 1 */
+
+.cards{
+    margin-top: 50px;
 }
 
-.our-services > .cards > div > div > div{
-    width: calc(100% / 2);
-    /* height: 400px; */
-    margin: 20px;
+.service-item{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+.service-item > *{
+    flex-grow: 1;
+    width: calc((100% - 30px) / 2);
     border-radius: 20px;
+}
+
+.service-item > .img{
     overflow: hidden;
+    object-fit: fill;
+    margin-bottom: 30px;
+    margin-top: 15px;
 }
 
-
-
-.our-services > .cards > div > div > .img img{
-    width: 100%;
-    height: 100%;
+.service-item > .img > img{
     transition: all 1s ease;
-    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
 }
 
-.our-services > .cards > div > div > .img:hover img{
-    transform: rotate(-5deg)
-    scale(1.2);
+.service-item > .img:hover > img{
+    transform: rotate(-5deg) scale(1.2);
 }
 
-.our-services > .cards > div > div > .cardplace{
+.service-item > .img-content{
     padding: 71px 43px 80px 50.5px;
 }
 
-/* Start */
-
-.our-services > .cards > div > div > .cardplace > .head{
+.service-item > .img-content > .head{
     margin: 27px 0 20px;
 }
 
-.our-services > .cards > div > div > .cardplace > .head > h3{
+.service-item > .img-content > .head > h3{
     font-size: 30px;
     font-weight: 400;
     letter-spacing: -1px;
@@ -1019,11 +1047,11 @@ header .row .div-2 ul li a{
     line-height: 1.15;
 }
 
-.our-services > .cards > div > div > .cardplace > .desc{
+.service-item > .img-content > .description{
     margin-bottom: 33px;
 }
 
-.our-services > .cards > div > div > .cardplace > .desc > p{
+.service-item > .img-content > .description > p{
     font-size: 18px;
     font-weight: 300;
     line-height: 18.5px;
@@ -1032,27 +1060,24 @@ header .row .div-2 ul li a{
     letter-spacing: normal;
 }
 
-.our-services > .cards > div > div > .cardplace > .read-more a{
+.service-item > .img-content > .read-more > a{
     text-decoration: none;
     font-family: "Public Sans", sans-serif;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 2px;
+    color: var(--links-color);
 }
-/* End */
 
-
-/* Card Content 1 */
-
-.our-services > .cards > div > div > .img-content-1 > .svg > svg{
+.service-item > .img-content > .svg > svg{
     stroke: #4F7661;
 }
 
-.our-services > .cards > div > div > .img-content-1{
+.img-content{
     background-color: var(--our-service-box-bg-color);
 }
 
-.our-services > .cards > div > div > .img-content-1 > .head > h3{
+.img-content-1 h3{
     color: var(--links-color);
 }
 .our-services > .cards > div > div > .img-content-1 > .desc > p,
@@ -1072,7 +1097,7 @@ header .row .div-2 ul li a{
 }
 
 
-.our-services > .cards > div > div > .img-content-2{
+.img-content{
     background-color: var(--our-service-box-bg-color-2);
 }
 

@@ -66,6 +66,9 @@
     .our-services > .header > .header > span{
         font-size: 12px;
     }
+    .service-item > *{
+        width: 100%;
+    }
 }
 
 @media (min-width: 576px){

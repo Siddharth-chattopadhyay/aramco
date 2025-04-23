@@ -57,6 +57,15 @@
     .banner .container h1{
         font-size: 50px;
     }
+
+    .our-services > .header > h1{
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .our-services > .header > .header > span{
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 576px){
@@ -165,9 +174,6 @@
     .banner-2 > .b-1 > div > .sb-1{
         max-width: 350px;
     }
-    /* .icon {
-        width: 25%;
-    } */
 }
 
 @media (min-width: 992px){
@@ -210,9 +216,6 @@
     .col-lg-12{
         width: 100%;
     }
-    /* .icon {
-        width: 25%;
-    }     */
 }
 
 @media (min-width: 1200px){

@@ -915,7 +915,7 @@ header .row .div-2 ul li a{
     font-size: 54px;
     font-weight: 400;
     letter-spacing: -2px;
-    line-height: 62.1px;
+    line-height: 1.2;
 }
 
 .our-services > .header > h1 > span{
@@ -923,8 +923,8 @@ header .row .div-2 ul li a{
 }
 
 .our-services > .buttons-no-3{
-    width: 85%;
-    height: 120px;
+    padding: 15px;
+    max-width: 88%;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
@@ -934,14 +934,13 @@ header .row .div-2 ul li a{
 }
 
 .our-services > .buttons-no-3 > div{
-    width: calc(100% / 3);
     background-color: var(--primary-color);
-    margin-right: 10px;
-    margin-left: 10px;
-    height: 70%;
+    /* margin-right: 10px;
+    margin-left: 10px; */
+    /* height: 70%; */
     border-radius: 50px;
-    padding: 20px;
-    padding-right: 0;
+    padding: 15px 20px;
+    /* padding-right: 20px; */
 }
 
 .our-services > .buttons-no-3 > div > div{
@@ -959,7 +958,7 @@ header .row .div-2 ul li a{
     color: white;
     font-family: "Tenor Sans", sans-serif;
     letter-spacing: -1px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
 }
 

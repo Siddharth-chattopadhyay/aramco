@@ -1246,7 +1246,7 @@ header .row .div-2 ul li a{
 }
 
 .freq-asked-questions > .box{
-    width: calc(100% / 3);
+    /* width: calc(100% / 3); */
     padding: 15px;
 }
 

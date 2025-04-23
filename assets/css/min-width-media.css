@@ -69,6 +69,10 @@
     .service-item > *{
         width: 100%;
     }
+
+    .freq-asked-questions > .s1 > .button > p{
+        font-size: 10px;
+    }
 }
 
 @media (min-width: 576px){

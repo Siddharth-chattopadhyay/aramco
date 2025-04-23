@@ -347,12 +347,13 @@ header .row .div-2 ul li a{
     width: 98%;
     margin: 2px auto;
     position: relative;
+    background-image: url("../images/banner/bg-ss1-h1-1.jpg");
+    background-size: cover;
 }
 
 .banner > img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
     position: absolute;
     top: 0px;
     left: 0px;

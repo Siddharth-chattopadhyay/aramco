@@ -38,6 +38,20 @@
     margin-left: calc(-1 * var(--gw));
     margin-right: calc(-1 * var(--gw));
 }
+
+a{
+    text-decoration: none;
+}
+
+ul, ol{
+    padding-left: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 400;
+}
+
 .col-1{
     width: 8.3333%;
 }
@@ -140,6 +154,10 @@ img{
 
 .row-gap-30{
     row-gap: 30px;
+}
+
+.column-gap-30{
+    column-gap: 30px;
 }
 
 header .row{
@@ -1390,38 +1408,29 @@ header .row .div-2 ul li a{
 }
 
 .clients-testimonials > .container{
-    position: relative;
-    width: 93%;
-    margin: 0 auto;
     background-color: var(--our-service-box-bg-color);
     border-radius: 20px;
     padding-top: 80px;
 }
 
-.clients-testimonials > .container > .s1 > img{
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    margin-bottom: 40px;
+.clients-testimonials .img > img{
+    border-radius: 20px;
 }
 
-.clients-testimonials > .container > div{
-    width: calc(100% / 2);
-    margin: 20px;
-}
-
-.clients-testimonials > .container > .s1 > div{
+.clients-testimonials .hero-heading{
     margin-bottom: 20px;
+    margin-top: 50px;
 }
 
-.clients-testimonials > .container > .s1 > div > span{
+.clients-testimonials .hero-heading > h3{
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: "Public Sans";
     color: var(--primary-color);
+    margin-bottom: 22px;
 }
 
-.clients-testimonials > .container > .s1 > h3{
+.clients-testimonials .hero-heading > h1{
     color: var(--links-color);
     font-family: "Tenor Sans";
     font-size: 54px;
@@ -1429,11 +1438,11 @@ header .row .div-2 ul li a{
     line-height: 62.1px;
 }
 
-.clients-testimonials > .container > .s1 > h3 > span{
+.clients-testimonials .hero-heading > h1 > span{
     color: var(--mark-color);
 }
 
-.clients-testimonials > .container > .s1 > p{
+.clients-testimonials .hero-description > p{
     font-family: "Public Sans";
     margin-top: 20px;
     color: var(--box-text-color);
@@ -1443,56 +1452,47 @@ header .row .div-2 ul li a{
     padding-bottom: 20px;
 }
 
-.clients-testimonials > .container > .s1 > a{
-    padding: 15px 25px;
+.clients-testimonials .learn-more-button{
     display: inline-block;
+    padding: 15px 25px;
     text-decoration: none;
     background-color: var(--primary-color);
     border-radius: 50px;
     margin-bottom: 100px;
-}
-
-.clients-testimonials > .container > .s1 > a > div{
-    column-gap: 20px;
     color: white;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-family: "Public Sans";
     font-size: 12px;
-    text-align: center;
     font-weight: 600;
 }
 
-/* .clients-testimonials > .container > .s2{
-} */
-
-.clients-testimonials > .container > .s2 > div{
+.clients-testimonials .comment-box{
     position: relative;
+    margin-top: 30px;
+    background-color: white;
     padding: 38px 55px 38px 59px;
-    background: white;
+    width: 100%;
     border-radius: 20px;
-    margin: 25px 0;
+    flex-wrap: wrap;
 }
 
-.clients-testimonials > .container > .s2 > div > .first{
-    display: inline-flex;
+.clients-testimonials .comment-box > .img{
+    width: 20%;
     margin-right: 36px;
-    max-width: 100px;
 }
 
-.clients-testimonials > .container > .s2 > div > .first > img{
-    width: 80px;
-    height: 80px;
+.clients-testimonials .comment-box > .img > img{
+    width: 100%;
     border-radius: 50%;
+    margin-bottom: 40px;
 }
 
-.clients-testimonials > .container > .s2 > div > .second > .stars{
-    color: rgb(var(--primary-color-rgb), 0.8);
-    margin-bottom: 20px;
-
+.clients-testimonials .comment-box > .details{
+    width: 80%;
 }
 
-.clients-testimonials > .container > .s2 > div > .second > .comments{
+.clients-testimonials .comment-box > .details > .comments{
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 19px;
@@ -1501,7 +1501,7 @@ header .row .div-2 ul li a{
     line-height: 1.5;
 }
 
-.clients-testimonials > .container > .s2 > div > .second > .client-name{
+.clients-testimonials .comment-box > .details > .client-name{
     color: var(--links-color);
     font-family: "Tenor Sans";
     font-weight: 400;
@@ -1511,7 +1511,7 @@ header .row .div-2 ul li a{
     margin-bottom: 5px;
 }
 
-.clients-testimonials > .container > .s2 > div > .second > .country-and-area{
+.clients-testimonials .comment-box > .details > .country-and-area{
     color: rgba(var(--primary-color-rgb), 0.7);
     font-family: "Public Sans";
     font-weight: 600;
@@ -1521,9 +1521,19 @@ header .row .div-2 ul li a{
     font-size: 12px;
 }
 
-.clients-testimonials > .container > .s2 > div > .third{
+.clients-testimonials .comment-box > .details > .stars{
+    margin-bottom: 20px;
+}
+
+.clients-testimonials .comment-box > .details > .stars > i{
+    color: rgba(var(--primary-color-rgb), 0.8);
+    margin-left: 4px;
+}
+
+.clients-testimonials .comment-box > .quote{
     position: absolute;
-    bottom: -6px;
+    bottom: -10px;
+    left: 50px;
 }
 
 /* Latest News Sections */

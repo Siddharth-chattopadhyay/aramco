@@ -76,6 +76,12 @@
     .our-case-studies > .title > h1{
         font-size: 35px;
     }
+    .clients-testimonials .comment-box > .img{
+        width: 60%;
+    }
+    .clients-testimonials .comment-box > .details{
+        width: 80%;
+    }
 }
 
 @media (min-width: 576px){
@@ -136,6 +142,12 @@
     .our-case-studies > .title > h1{
         font-size: 35px;
     }
+    .clients-testimonials .comment-box > .img{
+        width: 20%;
+    }
+    .clients-testimonials .comment-box > .details{
+        width: 80%;
+    }
 }
 
 @media (min-width: 768px){
@@ -181,6 +193,12 @@
     .banner-2 > .b-1 > div > .sb-1{
         max-width: 350px;
     }
+    .clients-testimonials .comment-box > .img{
+        width: 20%;
+    }
+    .clients-testimonials .comment-box > .details{
+        width: 80%;
+    }
 }
 
 @media (min-width: 992px){
@@ -222,6 +240,12 @@
     }
     .col-lg-12{
         width: 100%;
+    }
+    .clients-testimonials .comment-box > .img{
+        width: 20%;
+    }
+    .clients-testimonials .comment-box > .details{
+        width: 80%;
     }
 }
 
@@ -276,9 +300,12 @@
     .banner-3{
         padding: 165px 15px 177px 15px;
     }
-    /* .icon {
-        width: 15%;
-    } */
+    .clients-testimonials .comment-box > .img{
+        width: 20%;
+    }
+    .clients-testimonials .comment-box > .details{
+        width: 80%;
+    }
 }
 
 @media (min-width: 1400px){
@@ -323,5 +350,11 @@
     }
     .sub-banner > div:first-child{
         margin-top: 0px;
+    }
+    .clients-testimonials .comment-box > .img{
+        width: 20%;
+    }
+    .clients-testimonials .comment-box > .details{
+        width: 80%;
     }
 }

@@ -1570,7 +1570,7 @@ header .row .div-2 ul li a{
 
 /* latest-news - cards */
 .latest-news .card{
-    /* padding: 0px 10px; */
+    padding: 0px 0px 20px;
 }
 .latest-news .card .img-tag{
     position: relative;

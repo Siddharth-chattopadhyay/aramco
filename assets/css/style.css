@@ -1786,7 +1786,6 @@ header .row .div-2 ul li a{
 .book-your-session .form > .input .submitButton{
     width: 100%;
     padding: 10px 0;
-    text-align: center;
     line-height: 20px;
     transition: all 0.5s ease;
     border-radius: 50px;
@@ -1801,6 +1800,10 @@ header .row .div-2 ul li a{
     background-color: transparent;
     color: white;
     border: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
 .book-your-session .form > .input .submitButton:hover > button{

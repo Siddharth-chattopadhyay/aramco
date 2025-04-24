@@ -1799,15 +1799,13 @@ header .row .div-2 ul li a{
     background-color: var(--our-services-bg-color);
 }
 
-
-.brands > div > div{
-    padding: 10px 60px;
+.brands .row{
+    row-gap: 70px;
 }
 
-.brands > div > div > img{
-    width: 100%;
+.brands .brand-icon{
+    padding: 5px 40px;
 }
-
 
 /* Footer */
 

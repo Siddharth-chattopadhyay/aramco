@@ -39,6 +39,10 @@
         width: 100%;
     }
 
+    .hide-xs{
+        display: none;
+    }
+
     .header-2 > .nav-button{
         display: block;
     }
@@ -125,6 +129,10 @@
         width: 100%;
     }
 
+    .hide-sm{
+        display: none;
+    }
+
     .header-2 > .nav-button{
         display: block;
     }
@@ -190,6 +198,11 @@
     .col-md-12{
         width: 100%;
     }
+
+    .hide-md{
+        display: none;
+    }
+
     .banner-2 > .b-1 > div > .sb-1{
         max-width: 350px;
     }
@@ -241,6 +254,11 @@
     .col-lg-12{
         width: 100%;
     }
+
+    .hide-lg{
+        display: none;
+    }
+
     .clients-testimonials .comment-box > .img{
         width: 20%;
     }
@@ -289,6 +307,11 @@
     .col-xl-12{
         width: 100%;
     }
+
+    .hide-xl{
+        display: none;
+    }
+
     .header-2 > .nav-button{
         display: none;
     }
@@ -348,6 +371,11 @@
     .col-xxl-12{
         width: 100%;
     }
+
+    .hide-xxl{
+        display: none;
+    }
+
     .sub-banner > div:first-child{
         margin-top: 0px;
     }

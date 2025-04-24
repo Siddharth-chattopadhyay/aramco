@@ -1758,6 +1758,7 @@ header .row .div-2 ul li a{
     width: 100%;
     background-color: transparent;
     padding: 10px;
+    padding-bottom: 0;
     border: none;
     border-bottom: 1px solid var(--our-service-box-bg-color);
     margin-bottom: 40px;

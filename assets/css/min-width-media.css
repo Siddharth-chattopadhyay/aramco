@@ -86,6 +86,9 @@
     .clients-testimonials .comment-box > .details{
         width: 80%;
     }
+    .book-your-session .form{
+        padding: 100px 10px;
+    }
 }
 
 @media (min-width: 576px){
@@ -155,6 +158,9 @@
     }
     .clients-testimonials .comment-box > .details{
         width: 80%;
+    }
+    .book-your-session .form{
+        padding: 100px 10px;
     }
 }
 
@@ -328,6 +334,9 @@
     }
     .clients-testimonials .comment-box > .details{
         width: 80%;
+    }
+    .book-your-session .form{
+        padding: 100px;
     }
 }
 

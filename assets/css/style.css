@@ -1669,23 +1669,19 @@ header .row .div-2 ul li a{
 
 
 /* Book your Session Sections */
-
-.book-your-session {
+.book-your-session{
     padding: 152px 0px 0px 15px;
-    padding-left: calc(50% - 665px);
 }
 
-.book-your-session > .container > .second{
-    max-width: 60%;
-    margin-left: 9%;
-    background-color: var(--primary-color);
+.book-your-session > .container > .row{
+    align-items: center;
 }
 
-.book-your-session > .container > .first > .title{
+.book-your-session .heading-title{
     margin-bottom: 12px;
 }
 
-.book-your-session > .container > .first > .title > div{
+.book-your-session .heading-title > div{
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 3.2px;
@@ -1695,11 +1691,7 @@ header .row .div-2 ul li a{
     margin-bottom: 22px;
 }
 
-.book-your-session > .container > .first > .title > h5 > span{
-    color: var(--mark-color);
-}
-
-.book-your-session > .container > .first > .title > h5{
+.book-your-session .heading-title > h5{
     color: var(--links-color);
     font-size: 54px;
     line-height: 1.15;
@@ -1708,7 +1700,11 @@ header .row .div-2 ul li a{
     font-weight: 400;
 }
 
-.book-your-session > .container > .first > .description{
+.book-your-session .heading-title > h5 > span{
+    color: var(--mark-color);
+}
+
+.book-your-session .heading-title + p{
     color: var(--box-text-color);
     font-size: 18px;
     font-weight: 300;
@@ -1716,79 +1712,97 @@ header .row .div-2 ul li a{
     margin-bottom: 33px;
 }
 
-.book-your-session > .container > .first > .button{
-    display: inline-flex;
-    justify-content: center;
+.book-your-session .anchor-button{
+    display: inline-block;
+}
+
+.book-your-session .button-link{
+    display: flex;
+    padding: 10px 20px;
+    justify-content: flex-start;
     align-items: center;
-    text-decoration: none;
     color: var(--primary-color);
     font-family: "Public Sans";
     text-transform: uppercase;
     letter-spacing: 2px;
-    column-gap: 10px;
-    padding: 10px 20px;
+    column-gap: 4px;
     background-color: var(--secondary-color);
     border-radius: 50px;
+    font-size: 12px;
 }
 
-.book-your-session > .container > .second{
-    padding: 100px 100px 100px 100px;
+/* Book your Session - form */
+.book-your-session > .container > .row > div:last-child{
+    margin-top: 40px;
 }
 
-.book-your-session > .container > .second > .form > .heading{
+.book-your-session .form{
+    background-color: var(--primary-color);
+    padding: 100px;
+    margin-left: calc(-1 * var(--gw));
+    margin-right: calc(-1 * var(--gw));
+}
+
+.book-your-session .form > .heading{
     text-align: center;
     margin-bottom: 15px;
     font-size: 42px;
     font-weight: 400;
     letter-spacing: -2px;
-    color: white;
+    color: var(--our-service-box-bg-color);
     font-family: 'Tenor Sans';
 }
 
-.book-your-session > .container > .second > .form > .input{
-    margin: 0 auto;
-}
-
-.book-your-session > .container > .second > .form > .input > form  > .inputs > input{
+.book-your-session .form > .input input{
+    display: block;
+    width: 100%;
     background-color: transparent;
-    border-radius: 0;
-    padding: 0;
-    border: unset;
-    padding-bottom: 10px;
-    padding-right: 135px;
-    margin: 20px;
-    border-bottom: 1px solid white;
-    color: white;
-}
-
-.book-your-session > .container > .second > .form > .input > form > .inputs > input::placeholder{
-    color: white;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid var(--our-service-box-bg-color);
+    margin-bottom: 40px;
+    color: var(--our-service-box-bg-color);
+    font-size: 15px;
     font-weight: 100;
-    font-size: 16px;
     font-family: "Public Sans";
 }
 
-.book-your-session > .container > .second > .form > .input > form > .inputs > input:focus{
-    border: unset;
+.book-your-session .form > .input input::placeholder{
+    color: var(--our-service-box-bg-color);
+    font-size: 15px;
+    font-weight: 100;
+    font-family: "Public Sans";
+}
+
+.book-your-session .form > .input input:hover{
     outline: none;
-    border-bottom: 1px solid white;
 }
 
-.book-your-session > .container > .second > .form > .input > form > .button{
-    margin-top: 31px;
+.book-your-session .form > .input input:focus{
+    outline: none;
 }
 
-.book-your-session > .container > .second > .form > .input > form > .button > button{
-    background-color: transparent;
-    border: 1px solid white;
-    padding: 18px 35%;
+.book-your-session .form > .input .submitButton{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    line-height: 20px;
+    transition: all 0.5s ease;
     border-radius: 50px;
-    color: white;
-    transition: all 0.5s ease-in-out;
+    border: 1px solid white;
 }
 
-.book-your-session > .container > .second > .form > .input > form > .button > button:hover{
+.book-your-session .form > .input .submitButton:hover{
     background-color: white;
+}
+
+.book-your-session .form > .input .submitButton > button{
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.book-your-session .form > .input .submitButton:hover > button{
     color: var(--primary-color);
 }
 

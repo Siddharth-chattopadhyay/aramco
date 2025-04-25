@@ -1826,159 +1826,95 @@ header .row .div-2 ul li a{
 }
 
 /* Footer */
-
 footer{
     padding: 0 15;
     background-color: var(--box-color);
 }
 
-
-footer > .n1{
-    margin: 0 55px;
+.headlines{
+    padding-top: 62px;
+    padding-bottom: 50px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 1px solid rgba(223, 228, 225, 0.15)
 }
 
-footer > .n1 > .n2 > .n3{
-    padding: 15px;
-}
-
-footer > .n1 > .n2 > .n3 > .heading{
-    padding: 62px 0 50px;
-}
-
-footer > .n1 > .n2 > .n3 > .heading > div > .headlines{
+.headlines .newsletter{
     font-size: 30px;
     font-weight: 400;
     color: white;
     letter-spacing: -1px;
     line-height: 37.5px;
     font-family: 'Public Sans';
-}
-
-footer > .n1 > .n2 > .n3 > .heading > div > .headlines > p{
-    font-family: "Tenor Sans", sans-serif;
     font-weight: 400;
 }
 
+.headlines .subscribe-form{
+    padding: 0 40px;
+    padding-right: 10px;
+}
 
-/* Subscribe Email Form */
-
-footer > .n1 > .n2 > .n3 > .heading > div > div > form{
+.headlines .subscribe-form form,
+.headlines .subscribe-form input{
+    width: 100%;
     position: relative;
-    width: 100%;
+    color: white;
 }
-
-footer > .n1 > .n2 > .n3 > .heading > div > div > form > label{
-    display: block;
-    padding: 15px 30px;
-    width: 100%;
-    border: 1px solid white;
-    border-radius: 50px;
-    cursor: text;
-}
-
-footer > .n1 > .n2 > .n3 > .heading > div > div > form > label > input{
-    display: block;
-    width: 100%;
-    height: 100%;
+.headlines .subscribe-form input{
+    padding: 15px;
     background-color: transparent;
-    border: unset;
-    color: white;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.47);
 }
 
-footer > .n1 > .n2 > .n3 > .heading > div > div > form > label > input:focus{
+.headlines .subscribe-form input:focus{
     outline: none;
-    border: unset;
 }
 
-footer > .n1 > .n2 > .n3 > .heading > div > div > form > label > input::placeholder{
+.headlines .subscribe-form input::placeholder{
     color: white;
 }
 
-
-footer > .n1 > .n2 > .n3 > .heading > div > div > form > button{
+.headlines .subscribe-form button{
     position: absolute;
     right: 5px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 5px;
+    bottom: 5px;
+    width: 30%;
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    transition: all 0.5s ease-in-out;
-    border: 1px solid var(--secondary-color);
     border-radius: 50px;
-    font-size: 8px;
-    font-weight: 600;
-    text-align: center;
-    min-width: 128px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    line-height: 36px;
-    cursor: pointer;
+    border: none;
+    transition: all 0.5s ease;
 }
 
-footer > .n1 > .n2 > .n3 > .heading > div > div > form > button:hover{
+.headlines .subscribe-form button:hover{
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
 
-/* Subscribe Email Form End */
-
-
-footer > .n1 > .n2 > .n3 > .links{
+.content{
     margin-top: 75px;
     padding-bottom: 79px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.47);;
 }
 
-footer > .n1 > .n2 > .n3 > .links > div > .contact-us{
-    margin-right: 130px;
+/* Content */
+footer .content img{
+    max-height: 56px;
+    margin-left:calc(-1 * var(--gw));
 }
 
-footer > .n1 > .n2 > .n3 > .links > div > .contact-us > img{
-    display: block;
-    width: 100%;
-    height: 100%;
+footer .content ul > li:first-child{
     margin-bottom: 40px;
 }
 
-footer > .n1 > .n2 > .n3 > .links > div > .divs > nav > ul > li > a{
-    display: inline-flex;
-    align-items: center;
-    text-wrap: nowrap;
-    color: white;
-    text-decoration: none;
-    font-family: "Public Sans";
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30.0001px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
+footer .content ul > li{
+    margin: 20px 0;
 }
 
-footer > .n1 > .n2 > .n3 > .links > div > :not(.contact-us) > nav > ul > li > a:hover{
-    color: var(--primary-color);
-}
-
-footer > .n1 > .n2 > .n3 > .links > div > .contact-us > nav > ul > li > a > .svg{
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-}
-
-footer > .n1 > .n2 > .n3 > .links > div > .divs > nav > ul > li{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    padding: 5px;
-}
-
-footer > .n1 > .n2 > .n3 > .links > div > .divs > nav > ul > li:not(:last-child){
-    margin-bottom: 8px;
-}
-
-footer > .n1 > .n2 > .n3 > .links > div > .divs > nav > ul{
-    padding-left: 0;
-}
-
-footer > .n1 > .n2 > .n3 > .links > div > .divs > h1{
+footer .content ul > li > h1{
     color: white;
     font-family: "Tenor Sans";
     font-weight: 400;
@@ -1987,17 +1923,47 @@ footer > .n1 > .n2 > .n3 > .links > div > .divs > h1{
     margin-bottom: 29px;
 }
 
+footer .content ul > li .svg + p{
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+}
 
-footer > .n1 > .n2 > .n3 > .info > div > .copyright{
+footer .content ul > li > a{
+    color: white;
+    transition: all 0.5s ease-in-out;
+    font-family: "Public Sans";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30.0001px;
+}
+
+footer .content ul > li > a:hover{
+    color: var(--primary-color);
+}
+
+footer .content ul > li > a svg{
+    margin-right: 10px;
+}
+
+
+/* Info */
+
+.info .copyright{
     color: white;
     font-family: "Public Sans";
     font-weight: 400;
     font-size: 16px;
+    margin: 40px 0;
 }
 
-footer > .n1 > .n2 > .n3 > .info > div > .social-media > nav > a{
+.info .social-media{
+    margin: 40px 0;
+}
+
+.info .social-media a{
     display: inline-block;
-    text-decoration: none;
     color: white;
     margin: 0 3px;
     width: 39px;
@@ -2008,11 +1974,11 @@ footer > .n1 > .n2 > .n3 > .info > div > .social-media > nav > a{
     transition: all 0.5s ease-in-out;
 }
 
-footer > .n1 > .n2 > .n3 > .info > div > .social-media > nav > a:hover{
+.info .social-media a:hover{
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-footer > .n1 > .n2 > .n3 > .info > div > .social-media > nav > a > i{
+.info .social-media a > i{
     position: absolute;
     top: 50%;
     left: 50%;

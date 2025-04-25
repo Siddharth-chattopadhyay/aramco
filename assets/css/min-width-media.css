@@ -89,6 +89,9 @@
     .book-your-session .form{
         padding: 100px 10px;
     }
+    .headlines .subscribe-form form{
+        margin-top: 40px;
+    }
 }
 
 @media (min-width: 576px){
@@ -161,6 +164,9 @@
     }
     .book-your-session .form{
         padding: 100px 10px;
+    }
+    .headlines .subscribe-form form{
+        margin-top: 40px;
     }
 }
 
@@ -270,6 +276,9 @@
     }
     .clients-testimonials .comment-box > .details{
         width: 80%;
+    }
+    .headlines .subscribe-form form{
+        margin-top: 0;
     }
 }
 
